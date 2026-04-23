@@ -1,0 +1,19 @@
+#---------------------------------
+#         Shell Commands         |
+#---------------------------------
+
+1. To connect the server aremotely from another server and write something in /tmp 
+
+    sshpass -p "<Password>" ssh ec2-user<IP-Address> -C "echo Hello >> /tmp/hello.txt"
+
+    -C --> Argument 
+
+2. To install mySql in a server from another server remotely
+
+    sshpass -p "<Password>" ssh ec2-user<IP-Address> -C "curl https://raw.githubusercontent.com/aws-devopsprocloud/shell-script/refs/heads/main/08-install-mysql.sh | sudo bash"
+
+
+#---------------------------------
+#         Ansible Commands       |
+#---------------------------------
+
