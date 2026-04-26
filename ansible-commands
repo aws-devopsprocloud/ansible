@@ -20,3 +20,11 @@
 1. To run playbooks on local machine 
 
     ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=<Password> 01-playbook.yaml
+
+    # We can use ansible_user or ansible_username also in the command
+
+2. Variables
+    Play - vars 
+    File - vars_file 
+    Task - vars 
+    
