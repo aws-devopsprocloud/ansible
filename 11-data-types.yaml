@@ -1,0 +1,26 @@
+- name: Checking the data types in Ansible 
+  hosts: localhost 
+  vars:
+    Name: "Prem" 
+    Skills: 
+    - DevOps
+    - AWS 
+    - Linux 
+    Experience: 
+      DevOps: 7
+      AWS: 6 
+      Linux: 5 
+    Trainer: True 
+  tasks:
+  - name: Printing the Key-Pair 
+    ansible.builtin.debug: 
+      msg: Hello, My name is {{Name}}
+  - name: Printing the List Type 
+    ansible.builtin.debug: 
+      msg: Hello, My Skills are {{Skills}}
+  - name: Printing the Key-Value Pair Type 
+    ansible.builtin.debug: 
+      msg: Hello, My experience is {{Experience}}
+  - name: Printing the Boolean Type 
+    ansible.builtin.debug: 
+      msg: Is he a trainer? {{Trainer}}
