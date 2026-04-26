@@ -1,7 +1,7 @@
 - name: Variables from Task level 
   hosts: localhost 
-  vars_files:
-  - variables2.yaml
+  # vars_files:
+  # - variables2.yaml
   vars_prompt:
   - name: Name 
     prompt: Please enter your name 
@@ -28,4 +28,5 @@
 
 # 1. Command Line 
 # 2. Task level 
-# 3. 
+# 3. Files level 
+# 4. 
