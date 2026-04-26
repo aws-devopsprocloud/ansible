@@ -1,4 +1,4 @@
-- name: Variables from Task level 
+- name: Variables Preferences 
   hosts: localhost 
   # vars_files:
   # - variables2.yaml
@@ -17,7 +17,7 @@
     Course: "DevOps-from-PLAY-level" 
     Duration: "165Hrs"
   tasks:
-  - name: Variables from task level 
+  - name: Variables preferences 
     # vars:
     #   Name: "Prem"
     #   Course: "DevOps-from-TASK-level" 
