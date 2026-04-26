@@ -2,16 +2,16 @@
   hosts: localhost 
   # vars_files:
   # - variables2.yaml
-  vars_prompt:
-  - name: Name 
-    prompt: Please enter your name 
-    private: false 
-  - name: Course 
-    prompt: Please enter the Course name 
-    private: false 
-  - name: Duration 
-    prompt: "Please enter the Course Duration:"
-    private: false 
+  # vars_prompt:
+  # - name: Name 
+  #   prompt: Please enter your name 
+  #   private: false 
+  # - name: Course 
+  #   prompt: Please enter the Course name 
+  #   private: false 
+  # - name: Duration 
+  #   prompt: "Please enter the Course Duration:"
+  #   private: false 
   vars:
     Name: "Prem"
     Course: "DevOps-from-PLAY-level" 
@@ -29,4 +29,4 @@
 # 1. Command Line 
 # 2. Task level 
 # 3. Files level 
-# 4. 
+# 4. Prompt level 
