@@ -12,10 +12,10 @@
   # - name: Duration 
   #   prompt: "Please enter the Course Duration:"
   #   private: false 
-  vars:
-    Name: "Prem"
-    Course: "DevOps-from-PLAY-level" 
-    Duration: "165Hrs"
+  # vars:
+  #   Name: "Prem"
+  #   Course: "DevOps-from-PLAY-level" 
+  #   Duration: "165Hrs"
   tasks:
   - name: Variables preferences 
     # vars:
