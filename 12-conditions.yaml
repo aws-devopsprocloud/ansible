@@ -4,6 +4,7 @@
   - name: Checking if the user alrady exist 
     ansible.builtin.command: id roboshop 
     register: user # user is the variable here 
+    ignore_errors: true
 
   - name: Printing the user variable
     ansible.builtin.debug:
