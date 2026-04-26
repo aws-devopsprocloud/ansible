@@ -1,0 +1,26 @@
+- name: Variables from Task level 
+  hosts: localhost 
+  vars_files:
+  - variables2.yaml
+  vars_prompt:
+  - name: Name 
+    prompt: Please enter your name 
+    private: false 
+  - name: Course 
+    prompt: Please enter the Course name 
+    private: false 
+  - name: Duration 
+    prompt: "Please enter the Course Duration:"
+    private: false 
+  vars:
+    Name: "Prem"
+    Course: "DevOps-from-PLAY-level" 
+    Duration: "165Hrs"
+  tasks:
+  - name: Variables from task level 
+    vars:
+      Name: "Prem"
+      Course: "DevOps-from-TASK-level" 
+      Duration: "165Hrs"
+    ansible.builtin.debug:
+      msg: "Hello, This is {{Name}} and I'm learning {{Course}} and the Duration is {{Duration}}"

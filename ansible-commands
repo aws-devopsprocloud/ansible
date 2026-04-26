@@ -23,8 +23,11 @@
 
     # We can use ansible_user or ansible_username also in the command
 
+
+    ansible-playbook -i inventory.ini -e ansible_username=ec2-user -e ansible_password=DevOps321 -e "PERSON=Prem" -e "WISHES=Morning" 09-variables-from-cmd-args.yaml
+
 2. Variables
     Play - vars 
     File - vars_file 
     Task - vars 
-    
+
