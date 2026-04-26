@@ -1,0 +1,20 @@
+- name: Ansible Conditions 
+  hosts: localhost 
+  tasks: 
+  - name: Checking if the user alrady exist 
+    ansible.builtin.command: id roboshop 
+    register: user # user is the variable here 
+
+  - name: Printing the user variable
+    ansible.builtin.debug:
+      msg: "The output is {{user}}"
+
+  - name: Print the exist status of the command 
+    ansible.builtin.debug:
+      msg: "Status is {{user.rc}}"
+  
+  - name: Roboshop User Creation 
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0 # Condition
+
