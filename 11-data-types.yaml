@@ -1,26 +1,26 @@
 - name: Checking the data types in Ansible 
   hosts: localhost 
   vars:
-    Name: "Prem" 
-    Skills: 
+    Name: "Prem" # This is a KEY-VALUE PAIR Type
+    Skills: # This a LIST Type [List alwasy starts with hyphen (-)]
     - DevOps
     - AWS 
     - Linux 
-    Experience: 
+    Experience: # This is a MAP Type but contaions Key-Value Pair
       DevOps: 7
       AWS: 6 
       Linux: 5 
-    Trainer: True 
+    Trainer: True # This is a BOOLEAN Type
   tasks:
-  - name: Printing the Key-Pair 
+  - name: Printing the KEY-VALUE PAIR 
     ansible.builtin.debug: 
       msg: Hello, My name is {{Name}}
-  - name: Printing the List Type 
+  - name: Printing the LIST Type 
     ansible.builtin.debug: 
       msg: Hello, My Skills are {{Skills}}
-  - name: Printing the Key-Value Pair Type 
+  - name: Printing the MAP Type 
     ansible.builtin.debug: 
       msg: Hello, My experience is {{Experience}}
-  - name: Printing the Boolean Type 
+  - name: Printing the BOOLEAN Type 
     ansible.builtin.debug: 
       msg: Is he a trainer? {{Trainer}}
