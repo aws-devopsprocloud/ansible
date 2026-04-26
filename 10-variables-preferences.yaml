@@ -18,9 +18,14 @@
     Duration: "165Hrs"
   tasks:
   - name: Variables from task level 
-    vars:
-      Name: "Prem"
-      Course: "DevOps-from-TASK-level" 
-      Duration: "165Hrs"
+    # vars:
+    #   Name: "Prem"
+    #   Course: "DevOps-from-TASK-level" 
+    #   Duration: "165Hrs"
     ansible.builtin.debug:
       msg: "Hello, This is {{Name}} and I'm learning {{Course}} and the Duration is {{Duration}}"
+
+
+# 1. Command Line 
+# 2. Task level 
+# 3. 
