@@ -17,3 +17,6 @@
 #         Ansible Commands       |
 #---------------------------------
 
+1. To run playbooks on local machine 
+
+    ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=<Password> 01-playbook.yaml

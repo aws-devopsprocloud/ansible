@@ -1,10 +1,10 @@
 - name: Multiplay 
   hosts: localhost 
   tasks:
-  - name: From PLAY-1
+  - name: From PLAY-1 and TASK-1
     ansible.builtin.debug:
-      msg: "Hello from PLAY-1"
+      msg: "Hello from PLAY-1 and TASK-1"
 
-  - name: From PLAY-2 
+  - name: From PLAY-2 and TASK-2
     ansible.builtin.debug:
-      msg: "Hello from PLAY-2"
+      msg: "Hello from PLAY-2 and TASK-2"
