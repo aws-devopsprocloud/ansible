@@ -35,3 +35,10 @@
 4. Conditions 
 5. Loops 
 
+
+ansible_config
+ansible password and username 
+ansible templates 
+ansible handlers -- notify keyword
+
+

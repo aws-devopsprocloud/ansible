@@ -1,0 +1,15 @@
+- name: Tags 
+  hosts: localhost 
+  tasks:
+  - name: ping the server 
+    ansible.builtin.ping:
+
+  - name: print the value from tags-1
+    ansible.builtin.debug:
+      msg: "Hello AWS"
+    tags: aws 
+
+  - name: print the value from the tags-2
+    ansible.builtin.debug:
+      msg: "Hello DevOps"
+    tags: devops
