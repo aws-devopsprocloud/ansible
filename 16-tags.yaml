@@ -7,7 +7,9 @@
   - name: print the value from tags-1
     ansible.builtin.debug:
       msg: "Hello AWS"
-    tags: aws 
+    tags: 
+    - aws 
+    - prem
 
   - name: print the value from the tags-2
     ansible.builtin.debug:
